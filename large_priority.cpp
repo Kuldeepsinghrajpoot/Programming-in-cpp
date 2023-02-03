@@ -1,0 +1,59 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int p1,p2,p3,e=0;
+    cout<<"enter";
+    cin>>p1>>p2>>p3;
+    if(p1>=p2&&p1>=p3)
+    {
+        if(p2<p3)
+        {
+            cout<<p2<<p3<<p1;
+            p3=p2+p3;
+            p1=p3+p1;
+            cout<<"\np2\t"<<"p3\t"<<"p1\n";
+            cout<<p2<<"\t"<<p3<<"\t"<<p1<<"\t";
+        }
+       else
+       {
+           cout<<p3<<p2<<p1;
+           p2=p3+p2;
+           p1=p2+p1;
+           cout<<"\np3\t"<<"p2\t"<<"p1\n";
+            cout<<p3<<"\t"<<p2<<"\t"<<p1<<"\t";
+       }
+    }
+   else if(p2>=p1&&p2>=p1)
+    {
+        if(p1<p3)
+        {
+            cout<<p1<<p3<<p2;
+            p3=p1+p3;
+            p2=p2+p3
+            cout<<"\np2\t"<<"p3\t"<<"p1\n";
+            cout<<p2<<"\t"<<p3<<"\t"<<p1<<"\t";
+        }
+        else
+        {
+            cout<<p3<<p1<<p2<<"#";
+            cout<<"\np2\t"<<"p3\t"<<"p1\n";
+            cout<<p2<<"\t"<<p3<<"\t"<<p1<<"\t";
+        }
+    }
+   else if(p3>=p1&&p3>=p2)
+    {
+        if(p1<p2)
+        {
+            cout<<p1<<p2<<p3<<"..";
+            cout<<"\np2\t"<<"p3\t"<<"p1\n";
+            cout<<p2<<"\t"<<p3<<"\t"<<p1<<"\t";
+        }
+        else
+        {
+            cout<<p2<<p1<<p3<<"%";
+            cout<<"\np2\t"<<"p3\t"<<"p1\n";
+            cout<<p2<<"\t"<<p3<<"\t"<<p1<<"\t";
+        }
+    }
+}
